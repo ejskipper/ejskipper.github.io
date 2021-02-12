@@ -1,0 +1,39 @@
+.widget {
+  color: blue;
+}
+.widget div {
+  font-weight: bold;
+  border-color: blue;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+nav {
+  width: 100vw;
+}
+nav ul {
+  display: flex;
+}
+nav li {
+  list-style-type: none;
+  padding: 0px 20px;
+}
+nav li:hover {
+  background-color: skyblue;
+}
+
+.hero {
+  width: 100vw;
+  height: 30vw;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("hero-image.jpg");
+}
+
+.hero-text {
+  color: white;
+  text-align: center;
+}
+
+/*# sourceMappingURL=test.css.map */
