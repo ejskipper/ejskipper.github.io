@@ -1,13 +1,4 @@
-$widgetcolor: blue;
-
-.widget {
-  color: $widgetcolor;
-
-  div {
-    font-weight: bold;
-    border-color: $widgetcolor;
-  }
-}
+$mediumblue: #2f77a4;
 
 body {
   padding: 0;
@@ -34,12 +25,17 @@ nav {
 
   li {
     list-style-type: none;
-    padding: 20px;
+    padding: 20px 0;
 
     &:hover {
       background-color: skyblue;
     }
 
+    a {
+      text-decoration: none;
+      color: black;
+      padding: 20px;
+    }
   }
 }
 
@@ -78,6 +74,7 @@ nav {
     text-align: center;
     position: relative;
     width: 100%;
+
     &:after {
       content: '';
       position: absolute;
@@ -89,16 +86,19 @@ nav {
       margin-top: 4px;
     }
   }
+
   .section-content {
     position: relative;
     display: flex;
     justify-content: space-between;
     padding: 0px 10px;
   }
+
   .text-container {
     margin: 10px 0;
     width: 35%;
   }
+
   .section-image {
     width: 50%
   }
@@ -109,17 +109,81 @@ nav {
   text-align: center;
   padding: 20px;
   margin: 30px 0 10px 0;
+
   h3 {
     text-align: center;
     margin: 10px;
   }
+
   button {
     border: none;
-    background-color: #2f77a4;
+    background-color: $mediumblue;
     color: white;
     padding: 9px;
     border-radius: 4px;
     margin: 7px;
     font-size: 15px;
+  }
+}
+
+.mask {
+  stroke-dasharray: 1000 1000;
+  stroke-dashoffset: -1000;
+  animation-duration: 1s;
+  animation-name: draw;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+
+  &#mask-0 {
+    stroke-dasharray: 1300 1300;
+    stroke-dashoffset: -1300;
+    animation-delay: 0s;
+  }
+  &#mask-1 {
+    animation-delay: 1s;
+  }
+  &#mask-2 {
+    animation-delay: 2s;
+  }
+  &#mask-3 {
+    animation-delay: 3s;
+  }
+  &#mask-4 {
+    animation-delay: 4s;
+  }
+  &#mask-5 {
+    animation-delay: 5s;
+  }
+}
+
+@keyframes draw {
+  //from {
+  //  stroke-dashoffset: 1000;
+  //}
+
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+
+.leaf {
+  height: 30px;
+  animation-duration: 3s;
+  animation-name: fall;
+  animation-iteration-count: infinite;
+  animation-fill-mode: forwards;
+  animation-delay: 2s;
+  animation-timing-function: linear;
+  position: absolute; top: -450px;
+}
+
+@keyframes fall {
+  from {
+    position: absolute; top: -450px;
+  }
+
+  to {
+    position: absolute; top: 633px;
   }
 }
