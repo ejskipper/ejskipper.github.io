@@ -9,7 +9,7 @@
 body {
   padding: 0;
   margin: 0;
-  font-family: Bahnschrift;
+  font-family: Bahnschrift, sans-serif;
 }
 
 nav {
@@ -43,17 +43,66 @@ nav li:hover {
 }
 .hero-text h1 {
   position: absolute;
-  left: 10%;
+  left: 8%;
   top: 23vw;
 }
 .hero-text p {
   position: absolute;
-  left: 10%;
+  left: 8%;
   top: 28vw;
 }
 
 .main {
+  padding: 50px 10%;
+}
+
+.section h2 {
+  text-align: center;
+  position: relative;
+  width: 100%;
+}
+.section h2:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background: grey;
+  top: 100%;
+  left: 0;
+  margin-top: 4px;
+}
+.section .section-content {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 10px;
+}
+.section .text-container {
+  margin: 10px 0;
+  width: 35%;
+}
+.section .section-image {
+  width: 50%;
+}
+
+.call-to-action {
+  background-color: #ececec;
+  text-align: center;
   padding: 20px;
+  margin: 30px 0 10px 0;
+}
+.call-to-action h3 {
+  text-align: center;
+  margin: 10px;
+}
+.call-to-action button {
+  border: none;
+  background-color: #2f77a4;
+  color: white;
+  padding: 9px;
+  border-radius: 4px;
+  margin: 7px;
+  font-size: 15px;
 }
 
 /*# sourceMappingURL=test.css.map */
