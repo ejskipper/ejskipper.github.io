@@ -9,6 +9,7 @@
 body {
   padding: 0;
   margin: 0;
+  font-family: Bahnschrift;
 }
 
 nav {
@@ -16,10 +17,12 @@ nav {
 }
 nav ul {
   display: flex;
+  padding: 0;
+  margin: 0;
 }
 nav li {
   list-style-type: none;
-  padding: 0px 20px;
+  padding: 20px;
 }
 nav li:hover {
   background-color: skyblue;
@@ -27,13 +30,30 @@ nav li:hover {
 
 .hero {
   width: 100vw;
-  height: 30vw;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("hero-image.jpg");
+  height: 37vw;
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3)), url("hero-image.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .hero-text {
   color: white;
   text-align: center;
+  position: relative;
+}
+.hero-text h1 {
+  position: absolute;
+  left: 10%;
+  top: 23vw;
+}
+.hero-text p {
+  position: absolute;
+  left: 10%;
+  top: 28vw;
+}
+
+.main {
+  padding: 20px;
 }
 
 /*# sourceMappingURL=test.css.map */
