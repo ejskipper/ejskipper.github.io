@@ -153,60 +153,60 @@ nav li a {
   top: -450px;
 }
 .leaf1 {
-  height: 41px;
-  left: 17vw;
-  animation-delay: 1s;
-  animation-duration: 8s;
-  transform: rotate(179deg);
+  height: 70px;
+  left: 73vw;
+  animation-delay: 2s;
+  animation-duration: 7s;
+  transform: rotate(22deg);
 }
 .leaf2 {
-  height: 39px;
-  left: 74vw;
-  animation-delay: 3s;
-  animation-duration: 4s;
-  transform: rotate(282deg);
+  height: 44px;
+  left: 20vw;
+  animation-delay: 2s;
+  animation-duration: 8s;
+  transform: rotate(194deg);
 }
 .leaf3 {
-  height: 33px;
-  left: 97vw;
-  animation-delay: 3s;
+  height: 75px;
+  left: 44vw;
+  animation-delay: 2s;
   animation-duration: 7s;
-  transform: rotate(141deg);
+  transform: rotate(318deg);
 }
 .leaf4 {
-  height: 49px;
-  left: 40vw;
+  height: 47px;
+  left: 9vw;
   animation-delay: 1s;
-  animation-duration: 5s;
-  transform: rotate(65deg);
+  animation-duration: 7s;
+  transform: rotate(318deg);
 }
 .leaf5 {
-  height: 64px;
-  left: 50vw;
-  animation-delay: 2s;
-  animation-duration: 5s;
-  transform: rotate(121deg);
+  height: 52px;
+  left: 73vw;
+  animation-delay: 1s;
+  animation-duration: 4s;
+  transform: rotate(172deg);
 }
 .leaf6 {
-  height: 72px;
-  left: 79vw;
-  animation-delay: 1s;
-  animation-duration: 7s;
-  transform: rotate(186deg);
+  height: 33px;
+  left: 88vw;
+  animation-delay: 3s;
+  animation-duration: 8s;
+  transform: rotate(50deg);
 }
 .leaf7 {
-  height: 44px;
-  left: 73vw;
-  animation-delay: 3s;
-  animation-duration: 7s;
-  transform: rotate(95deg);
+  height: 61px;
+  left: 97vw;
+  animation-delay: 2s;
+  animation-duration: 8s;
+  transform: rotate(214deg);
 }
 .leaf8 {
-  height: 39px;
-  left: 48vw;
-  animation-delay: 2s;
-  animation-duration: 4s;
-  transform: rotate(193deg);
+  height: 46px;
+  left: 12vw;
+  animation-delay: 3s;
+  animation-duration: 6s;
+  transform: rotate(172deg);
 }
 
 @keyframes fall {
@@ -237,6 +237,14 @@ nav li a {
 #fetch:hover {
   cursor: pointer;
   background-color: #134967;
+}
+
+.dice-container .die {
+  display: inline-block;
+}
+.dice-container .die .die-image {
+  width: 200px;
+  height: 200px;
 }
 
 /*# sourceMappingURL=test.css.map */

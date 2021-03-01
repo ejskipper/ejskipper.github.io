@@ -224,3 +224,17 @@ nav {
     background-color: $darkerblue;
   }
 }
+
+.dice-container {
+
+  .die {
+    display: inline-block;
+
+    .die-image{
+      width: 200px;
+      height: 200px;
+    }
+  }
+
+
+}
