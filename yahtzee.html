@@ -18,23 +18,26 @@
 
 <div class="main">
     <div class="dice-container">
-        <div class="die">
+        <div class="die" id="die-1" data-value=undefined data-selected="false">
             <img class="die-image" src="dice-1.webp" alt="First die"/>
         </div>
-        <div class="die">
+        <div class="die" id="die-2" data-value=undefined data-selected="false">
             <img class="die-image" src="dice-1.webp" alt="First die"/>
         </div>
-        <div class="die">
+        <div class="die" id="die-3" data-value=undefined data-selected="false">
             <img class="die-image" src="dice-1.webp" alt="First die"/>
         </div>
-        <div class="die">
+        <div class="die" id="die-4" data-value=undefined data-selected="false">
             <img class="die-image" src="dice-1.webp" alt="First die"/>
         </div>
-        <div class="die">
+        <div class="die" id="die-5" data-value=undefined data-selected="false">
             <img class="die-image" src="dice-1.webp" alt="First die"/>
         </div>
-
-        <button id="roll">Roll!</button>
+    </div>
+    <div class="yahtzee-buttons">
+        <button id="roll" data-status="active">Roll!</button>
+        <button id="re-roll" data-status="inactive">Re-roll</button>
+        <button id="next-turn" data-status="inactive">Next turn</button>
     </div>
 </div>
 </body>

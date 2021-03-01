@@ -1,3 +1,4 @@
+$lightblue: #90c1e0;
 $mediumblue: #2f77a4;
 $darkerblue: #134967;
 
@@ -229,12 +230,32 @@ nav {
 
   .die {
     display: inline-block;
+    padding: 10px;
+    border-radius: 5px;
+
+    &[data-value="undefined"] {
+      display: none;
+    }
+
+    &[data-selected="false"] {
+      &:hover {
+        background-color: $lightblue;
+      }
+    }
+
+    &[data-selected="true"] {
+      background-color: $mediumblue;
+    }
 
     .die-image{
       width: 200px;
       height: 200px;
     }
   }
+}
 
-
+.yahtzee-buttons {
+  button[data-status="inactive"] {
+    display: none;
+  }
 }

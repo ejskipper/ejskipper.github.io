@@ -153,60 +153,60 @@ nav li a {
   top: -450px;
 }
 .leaf1 {
-  height: 70px;
-  left: 73vw;
-  animation-delay: 2s;
-  animation-duration: 7s;
-  transform: rotate(22deg);
-}
-.leaf2 {
-  height: 44px;
-  left: 20vw;
-  animation-delay: 2s;
-  animation-duration: 8s;
-  transform: rotate(194deg);
-}
-.leaf3 {
-  height: 75px;
-  left: 44vw;
-  animation-delay: 2s;
-  animation-duration: 7s;
-  transform: rotate(318deg);
-}
-.leaf4 {
-  height: 47px;
-  left: 9vw;
-  animation-delay: 1s;
-  animation-duration: 7s;
-  transform: rotate(318deg);
-}
-.leaf5 {
-  height: 52px;
-  left: 73vw;
-  animation-delay: 1s;
-  animation-duration: 4s;
-  transform: rotate(172deg);
-}
-.leaf6 {
-  height: 33px;
-  left: 88vw;
-  animation-delay: 3s;
-  animation-duration: 8s;
-  transform: rotate(50deg);
-}
-.leaf7 {
-  height: 61px;
-  left: 97vw;
-  animation-delay: 2s;
-  animation-duration: 8s;
-  transform: rotate(214deg);
-}
-.leaf8 {
-  height: 46px;
-  left: 12vw;
+  height: 66px;
+  left: 21vw;
   animation-delay: 3s;
   animation-duration: 6s;
-  transform: rotate(172deg);
+  transform: rotate(342deg);
+}
+.leaf2 {
+  height: 39px;
+  left: 26vw;
+  animation-delay: 1s;
+  animation-duration: 4s;
+  transform: rotate(262deg);
+}
+.leaf3 {
+  height: 41px;
+  left: 40vw;
+  animation-delay: 3s;
+  animation-duration: 5s;
+  transform: rotate(29deg);
+}
+.leaf4 {
+  height: 80px;
+  left: 77vw;
+  animation-delay: 1s;
+  animation-duration: 8s;
+  transform: rotate(350deg);
+}
+.leaf5 {
+  height: 46px;
+  left: 23vw;
+  animation-delay: 3s;
+  animation-duration: 6s;
+  transform: rotate(45deg);
+}
+.leaf6 {
+  height: 46px;
+  left: 59vw;
+  animation-delay: 1s;
+  animation-duration: 6s;
+  transform: rotate(151deg);
+}
+.leaf7 {
+  height: 78px;
+  left: 11vw;
+  animation-delay: 1s;
+  animation-duration: 6s;
+  transform: rotate(192deg);
+}
+.leaf8 {
+  height: 51px;
+  left: 60vw;
+  animation-delay: 2s;
+  animation-duration: 5s;
+  transform: rotate(48deg);
 }
 
 @keyframes fall {
@@ -241,10 +241,25 @@ nav li a {
 
 .dice-container .die {
   display: inline-block;
+  padding: 10px;
+  border-radius: 5px;
+}
+.dice-container .die[data-value=undefined] {
+  display: none;
+}
+.dice-container .die[data-selected=false]:hover {
+  background-color: #90c1e0;
+}
+.dice-container .die[data-selected=true] {
+  background-color: #2f77a4;
 }
 .dice-container .die .die-image {
   width: 200px;
   height: 200px;
+}
+
+.yahtzee-buttons button[data-status=inactive] {
+  display: none;
 }
 
 /*# sourceMappingURL=test.css.map */
