@@ -16,9 +16,16 @@ if (window.Worker) {
         console.log('Message posted to worker');
 
 
+var slowCounter = 1;
+setInterval(() => {
+    document.getElementById('slow-counter').innerHTML = `Waiting for ${slowCounter} seconds`;
+    slowCounter ++;
+}, 1000)
+
     myWorker.onmessage = function(e) {
         console.log('Message received from worker');
         document.getElementById('slow-info').innerHTML = `<p>Here it is!</p><img src="data:image/jpg;base64, ${_arrayBufferToBase64(e.data)}" alt="Generic filler picture"/>`
+        clearInterval();
 
     }
 } else {
